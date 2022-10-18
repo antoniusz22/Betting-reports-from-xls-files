@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 
 
 def report(file):
-    file = input("Podaj nazwe pliku")
+
     num_of_match = int(input("Z ktorej kolejki chcesz stworzyc raport: "))
     workbook = load_workbook(filename=file, data_only=True)
     sheet = workbook.active
@@ -21,4 +21,4 @@ def report(file):
     print("Raport gotowy w pliku 'raport.txt'")
 
 
-report('TYPER-24.xlsm')
+report('TYPER-36.xlsx')
